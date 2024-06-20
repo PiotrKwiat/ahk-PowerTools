@@ -70,6 +70,13 @@ Menu,Tray,Standard
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 
+; -------------------------------------------------------------------------------------------------------------------
+Menu, OutlookShortcutsMenu, add, CopyLink (Ctrl+Shift+C), CopyLink
+Menu, OutlookShortcutsMenu, add, Meeting to Emails, Meeting2Emails
+Menu, OutlookShortcutsMenu, add, Meeting Recipients to Excel, Meeting2Excel
+Menu, OutlookShortcutsMenu, add, Item to Teams Chat, Teams_OpenChat
+; -------------------------------------------------------------------------------------------------------------------
+
 ; ----------------------------------------------------------------------
 
 ; Outlook Reminders on the top ; https://stackoverflow.com/a/35154133/2043349 
@@ -94,13 +101,6 @@ loop {
 } ; eo loop
 
 ; ----------------------------------------------------------------------
-
-; -------------------------------------------------------------------------------------------------------------------
-Menu, OutlookShortcutsMenu, add, CopyLink (Ctrl+Shift+C), CopyLink
-Menu, OutlookShortcutsMenu, add, Meeting to Emails, Meeting2Emails
-Menu, OutlookShortcutsMenu, add, Meeting Recipients to Excel, Meeting2Excel
-Menu, OutlookShortcutsMenu, add, Item to Teams Chat, Teams_OpenChat
-; -------------------------------------------------------------------------------------------------------------------
 
 return
 
